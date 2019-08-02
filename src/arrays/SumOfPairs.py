@@ -12,8 +12,10 @@ def sumOfPairs(nums,sum):
             last -= 1
         else:
             first += 1   
-            
-    print("found at index {}, {}".format(first,last))             
-    
+    if found:
+        print("found at index {}, {}".format(first,last))
+    else:
+        print('Not Found')
+
 nums =  [3, 5, 5, 10, 15, 17, 20 ]
 sumOfPairs(nums, 20)  
